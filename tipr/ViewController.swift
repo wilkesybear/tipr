@@ -27,7 +27,6 @@ class ViewController: UIViewController
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
-        println("Loaded ViewController")
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,24 +56,20 @@ class ViewController: UIViewController
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        println("view will appear")
         loadDefaults()
         onEditingChanged(tipControl)
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        println("view did appear")
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        println("view will disappear")
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        println("view did disappear")
     }
     
     func loadDefaults() {
